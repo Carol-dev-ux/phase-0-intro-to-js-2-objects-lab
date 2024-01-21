@@ -1,3 +1,10 @@
+const {
+  updateEmployeeWithKeyAndValue,
+  destructivelyUpdateEmployeeWithKeyAndValue,
+  deleteFromEmployeeByKey,
+  destructivelyDeleteFromEmployeeByKey,
+} = require('../index.js');
+
 describe('employees', function() {
   describe('updateEmployeeWithKeyAndValue(employee, key, value)', function () {
     beforeEach(function () {
@@ -65,4 +72,5 @@ describe('employees', function() {
       expect(employee).to.equal(newEmployee);
     });
   });
+
 });
